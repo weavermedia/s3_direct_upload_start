@@ -1,0 +1,25 @@
+<style>
+.photo {
+  border: solid 1px #CCC;
+  padding: 10px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.photo .frame {
+    width: 100%
+    overflow: hidden;
+  }
+.photo .frame img {
+      height: 200px;
+  }
+}
+</style>
+
+<div class="photo">
+  <div class="frame">
+    <%= image_tag photo.url %>
+  </div>
+  ID:<%= photo.id %>
+  <%= link_to "Delete".html_safe, photo, :confirm => 'Are you sure?', :method => :delete %>
+</div>

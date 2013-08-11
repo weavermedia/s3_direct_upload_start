@@ -1,0 +1,18 @@
+<h1>Listing photos</h1>
+
+<%= s3_uploader_form callback_url: photos_url, callback_param: "photo[url]", id: "myS3Uploader" do %>
+  <%= file_field_tag :file, multiple: true %>
+<% end %>
+
+<script id="template-upload" type="text/x-tmpl">
+<div id="file-{%=o.unique_id%}" class="upload">
+  {%=o.name%}
+  <div class="progress"><div class="bar" style="width: 0%"></div></div>
+</div>
+</script>
+
+<br/>
+<div id="photos">
+  <%= render @photos %>
+</div>
+
