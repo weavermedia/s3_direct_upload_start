@@ -43,3 +43,4 @@ capybara-*.html
 rerun.txt
 pickle-email-*.html
 .project
+s3_direct_upload.rb
