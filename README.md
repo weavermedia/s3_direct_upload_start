@@ -30,7 +30,7 @@ Make this your bucket CORS configuration. This is easily done through the AWS co
 
     <CORSConfiguration>
         <CORSRule>
-            <AllowedOrigin>http://localhost:3000</AllowedOrigin>
+            <AllowedOrigin>*</AllowedOrigin>
             <AllowedMethod>GET</AllowedMethod>
             <AllowedMethod>POST</AllowedMethod>
             <AllowedMethod>PUT</AllowedMethod>
